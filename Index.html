@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="description" content="">
+
+	<meta name="viewport" content="width=device-width">
+
+	<title>title</title>
+
+	<link rel="stylesheet" href="./css/main.css">
+
+	<script src="./js/main.js" type="module"></script>
+</head>
+
+<body>
+	<canvas id="MainCanvas"></canvas>
+	<p> Page title</p>
+
+	<button type="button" class="ChangeSceneButton" value="main"> Main </button>
+	<button type="button" class="ChangeSceneButton" value="ulbrecht"> Ulbrecht </button>
+	<button type="button" class="ChangeSceneButton" value="mocca"> Mocca </button>
+	<button type="button" class="ChangeSceneButton" value="shader"> Shader </button>
+
+	<!-- scene specific html elements -->
+	<!-- main scene specific elements -->
+	<div id="MainScene" class="SceneSpecific"></div>
+	<!-- ulbrecht specififc elements -->
+	<div id="UlbrechtScene" class="SceneSpecific">
+		<button type="button" class="UlbrechtButton" value="3"> A </button>
+		<button type="button" class="UlbrechtButton" value="2"> B </button>
+		<button type="button" class="UlbrechtButton" value="1"> C </button>
+		<button type="button" class="UlbrechtButton" value="0"> D </button>
+		<button type="button" class="UlbrechtButton" value="4"> E </button>
+	</div>
+	<div id="MoccaScene" class="SceneSpecific">
+		<div>
+			<input type="range" min="0" max="1023" value="512" class="slider" id="adc10"> adc 10 & 8 </input>
+			<input type="range" min="0" max="1023" value="512" class="slider" id="adc11"> adc 11 & 9 </input>
+		</div>
+		<div>
+			<button type="button" class="MoccaButton" value="0"> 0 </button>
+			<button type="button" class="MoccaButton" value="1"> 1 </button>
+			<button type="button" class="MoccaButton" value="2"> 2 </button>
+			<button type="button" class="MoccaButton" value="3"> 3 </button>
+		</div>	
+		<div>
+			<input type="checkbox" class="MoccaSchalter" value="7">128</input>
+			<input type="checkbox" class="MoccaSchalter" value="6">64</input>
+			<input type="checkbox" class="MoccaSchalter" value="5">32</input>
+			<input type="checkbox" class="MoccaSchalter" value="4">16</input>
+			<input type="checkbox" class="MoccaSchalter" value="3">8</input>
+			<input type="checkbox" class="MoccaSchalter" value="2">4</input>
+			<input type="checkbox" class="MoccaSchalter" value="1">2</input>
+			<input type="checkbox" class="MoccaSchalter" value="0">1</input>
+		</div>
+		<input type="range" min="0" max="6" value="0" class="slider" id="MoccaMode"> mode </input>
+	</div>
+	<div id="FancyUSScene" class="SceneSpecific">
+		<input type="range" min="0" max="10" value="0" class="slider" id="fusSelector"> adc 11 & 9 </input>
+	</div>
+	<!-- <div>
+		<input type="range" min="0" max="128" value="0x32" class="slider" id="myRange">
+		<textarea id="textArea" rows="4" cols="20"></textarea>
+	</div> -->
+
+</body>
+
+</html>
